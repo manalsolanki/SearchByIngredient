@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lobster+Two&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div class="main-page">
+            <div class="main-container">
+                <h1>Thinking 🤔 what to make?</h1>
+                <h3>So what all vegetables you have ?</h3>
+                <form name="myform">
+                    <div class="form-elements">
+                        <label for="item1">Ingredient 1<span id="errorMsg">*</span></label>
+                        <input name="item1" id="item1" type="text" />
+                    </div>
+                    <div class="form-elements">
+                        <label for="item2">Ingredient 2</label>
+                        <input name="item2" id="item2" type="text" />
+                    </div>
+                    <div class="form-elements">
+                        <label for="item2">Ingredient 2</label>
+                        <input name="item2" id="item2" type="text" />
+                    </div>
+                    <div class="form-elements">
+                        <input type="submit" value="Search" />
+                    </div>
+                </form>
+                <section id="listContainer"class="list-container">
+                  <h2>Possible Dishes</h2>
+                  <ul id="possibleDishes"class="possible-dishes">
+                  </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

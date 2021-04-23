@@ -1,0 +1,120 @@
+html {
+    box-sizing:border-box; /* allow width and height to include everything up until the border */
+}
+*, *::before, *::after {
+    box-sizing:inherit;
+}
+body{
+    font-family: 'Arvo', serif;
+    margin:0; 
+}
+h1{
+    font-family: 'Lobster Two', cursive;
+    color: #060c4e;
+    margin: 0;
+    font-size: 2.7em;
+}
+h2{
+font-size: 2.5em;
+    color: #060c4e;
+    margin: 0;
+}
+h3{
+    margin:0.5em;
+}
+.main-page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/image/background.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    min-width: 500px;
+    border: 1px solid rgba(162,255,255,50%);
+    border-radius: 5px;
+    padding:1em;
+    background-color: rgba(162,255,255,75%);
+    
+}
+.main-container h1,h3{
+    text-align: center;
+}
+
+.form-elements{
+    margin-top:1em;
+    text-align: center;
+}
+label{
+    display: block;
+    font-weight: bold;
+}
+input{
+    padding:0.5em 1em;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+input[type=submit]{
+    width: 30%;
+    background-color: #556938;
+    border: 1px solid #556938;
+    color: white;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.5em;
+}
+
+input[type=submit]:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: #556938;
+}
+#errorMsg{
+    color: red;
+    font-weight: bold;
+}
+.list-container{
+    text-align: center;
+    padding:1em;
+    display: none;
+}
+.possible-dishes{
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+}
+li a{
+    font-family: 'Lobster Two', cursive;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: #380a36;
+}
+li a:hover{
+    font-size: 2.5em;
+}
+
+.line{
+    max-width: 400px;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+.recipe-heading{
+    margin:0em;
+    font-size: 2em;
+    /* text-align: center; */
+    font-family: 'Lobster Two', cursive;
+}
+
+.recipe-list{
+    list-style:disc;
+    padding-left:40px;
+}
+.recipe-list li{
+    font-size: 1.3em;
+}
