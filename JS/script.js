@@ -14,7 +14,7 @@
 
     // recipeList is an array of object to store the name,ingredients array and a lin to the recipe page.
     var recipeList = [
-        { name: "Sweet Corn Soup", ingredients: ["carrot", "bean", "corn"], steps: "https://www.indianhealthyrecipes.com/sweet-corn-soup-recipe/" },
+        { name: "Sweet Corn Soup", ingredients: ["carrot", "bean", "corn"], steps: "./recipe.html" },
         { name: "Yam Ginger Soup", ingredients: ["sweet potato,ginger"], steps: "https://www.epicurious.com/recipes/food/views/roasted-sweet-potato-and-ginger-soup" },        { name: "Hot and Sour Soup", ingredients: ["carrot", "bean", "cabbage", "mushroom"], steps: "https://www.vegrecipesofindia.com/veg-hot-and-sour-soup-recipe/#wprm-recipe-container-137369" },
         { name: "Classic Red Pasta", ingredients: ["tomato", "pepper"], steps: "https://www.foodnetwork.com/recipes/classic-red-sauce-3362824" },
         { name: "Vegetable Lasagna", ingredients: ["carrot", "zucchini", "spinach", "pepper"], steps: "https://cookieandkate.com/best-vegetable-lasagna-recipe/" },

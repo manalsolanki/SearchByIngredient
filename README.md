@@ -12,8 +12,10 @@
         - 1st input : carrot
         - 2nd input : corn 
         - 3rd input : pepper
-    - So the output will be 3 dishes Sweet Corn Soup, Vegetable lasagna and egetable noodles.
+    - So the output will be 3 dishes Sweet Corn Soup, Vegetable lasagna and vegetable noodles.
     - As corn & carrot are present in sweet corn soup and carrot & pepper are in lasagna and noodles.
+
+- Have a recipe.html which specifies (currently) only one recipe but we can make similar in future.
 
 - Current Limitation : The input we are giving should be the same name as mentioned in the code.
 
@@ -22,6 +24,7 @@
     - Instead of only considering 2 ingredients can consider more.
     - Can add more user Inputs.
     - Furthermore can connec to the Database and store each recipe detail in tables which would help to manage.
+    - Can store the final computed list in local storage and with we the help of that we can render information about a recipe to another page and display in detail.
 
 
     

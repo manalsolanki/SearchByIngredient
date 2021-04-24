@@ -28,7 +28,8 @@ h3{
 .main-page{
     width: 100vw;
     height: 100vh;
-    background-image: url(../image/background.jpeg);
+    background-image: url(../image/background.jpeg); 
+    /* Image source : https://external-preview.redd.it/W0I5E4gf_h3Ge5fEzDEdH7Ln5WJ9IzLOWTVuPVSnqRk.jpg?width=640&crop=smart&auto=webp&s=371ede2b960723a76e7cd93b7e6056946bc8fed2*/
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
