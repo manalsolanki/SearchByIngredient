@@ -1,3 +1,4 @@
+/* General CSS */
 html {
     box-sizing:border-box; /* allow width and height to include everything up until the border */
 }
@@ -22,10 +23,12 @@ font-size: 2.5em;
 h3{
     margin:0.5em;
 }
+
+/* Style for the index Page */
 .main-page{
     width: 100vw;
     height: 100vh;
-    background-image: url(/image/background.jpeg);
+    background-image: url(../image/background.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
@@ -33,6 +36,7 @@ h3{
     align-items: center;
 }
 .main-container{
+
     min-width: 500px;
     border: 1px solid rgba(162,255,255,50%);
     border-radius: 5px;
@@ -43,10 +47,14 @@ h3{
 .main-container h1,h3{
     text-align: center;
 }
-
+/* Styles for the form. */
 .form-elements{
     margin-top:1em;
     text-align: center;
+}
+.possible-dishes{
+    max-height: 200px;
+    overflow-y: auto;
 }
 label{
     display: block;
@@ -72,10 +80,11 @@ input[type=submit]:hover{
     border: 1px solid white;
     color: #556938;
 }
-#errorMsg{
+.errorMsg{
     color: red;
     font-weight: bold;
 }
+/* Style for the list section */
 .list-container{
     text-align: center;
     padding:1em;
@@ -104,10 +113,12 @@ li a:hover{
     margin: 0 auto;
     border-radius: 3px;
 }
+
+
+/* Styles for recipe Detail page. */
 .recipe-heading{
     margin:0em;
     font-size: 2em;
-    /* text-align: center; */
     font-family: 'Lobster Two', cursive;
 }
 
