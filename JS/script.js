@@ -23,8 +23,10 @@
         { name: "Veg Noodles", ingredients: ["pepper", "carrot", "cabbage"], steps: "https://www.indianhealthyrecipes.com/veg-noodles-recipe/" },
         { name: "Cauliflower Stir Fry", ingredients: ["cauliflower", "peas", "carrot"], steps: "https://vegcookbook.net/2019/12/23/cauliflowercarrots-peas-stir-fry/" },
         { name: "Vegetable Paratha", ingredients: ["potatoes","peas","carrot", "cauliflower"], steps: "https://www.spiceupthecurry.com/vegetable-paratha-recipe/" },
-        { name: "Vegetable Fried Rice", ingredients: ["carrot","cabbage","beans", "spring onion"], steps: "https://www.spiceupthecurry.com/vegetable-paratha-recipe/" }
-
+        { name: "Vegetable Fried Rice", ingredients: ["carrot","cabbage","bean", "spring onion"], steps: "https://www.spiceupthecurry.com/vegetable-paratha-recipe/" },
+        { name: "Avacado Toasties", ingredients: ["avacado","tomato"], steps: "https://cookieandkate.com/avocado-toast-recipe/" },
+        { name: "Greek Salad", ingredients: ["cucumber","tomato","pepper"], steps: "https://www.loveandlemons.com/greek-salad/#wprm-recipe-container-43127" },
+        { name: "Quinoa Salad", ingredients: ["cucumber","pepper"], steps: "https://cookieandkate.com/best-quinoa-salad-recipe/" }
     ];
 
     // This variable helps to fetch  the HTML form.
@@ -91,6 +93,7 @@
                     finalDishes.push(recipeList[i]);
                 }
             }
+           
             // The section which contains the list.
             listContainer.style.display = "block";
             
@@ -100,27 +103,38 @@
                 possibleDishes.innerHTML = "";
             }
 
-            // Iterates throught the result the array.
-             for (i = 0; i < finalDishes.length; i++) {
-
-                // Creates a "li" element.
+            // If no matches is found, then this mesage is displayed.
+            if(finalDishes.length == 0){
                 var list = document.createElement("li");
-                // Creates a "a" tag.
-                var link = document.createElement("a");
-                // Assigns value to the a tag create.
-                var textnode = document.createTextNode(finalDishes[i].name);
-                // Assigns link a tag.
-                link.href = finalDishes[i].steps;
-                // Addign attritube to a tag.
-                link.setAttribute('target', '_blank')
-
-                // Appending the text to a tag.
-                link.appendChild(textnode);
-                //Appending a tag to the li
-                list.appendChild(link);
-                // Appends to main ul.
+                var textnode = document.createTextNode("No dishes found. Try again.");
+                list.appendChild(textnode);
                 possibleDishes.appendChild(list);
-                
+            }
+            else{
+
+            // Iterates throught the result the array.
+            
+                for (i = 0; i < finalDishes.length; i++) {
+
+                    // Creates a "li" element.
+                    var list = document.createElement("li");
+                    // Creates a "a" tag.
+                    var link = document.createElement("a");
+                    // Assigns value to the a tag create.
+                    var textnode = document.createTextNode(finalDishes[i].name);
+                    // Assigns link a tag.
+                    link.href = finalDishes[i].steps;
+                    // Addign attritube to a tag.
+                    link.setAttribute('target', '_blank')
+    
+                    // Appending the text to a tag.
+                    link.appendChild(textnode);
+                    //Appending a tag to the li
+                    list.appendChild(link);
+                    // Appends to main ul.
+                    possibleDishes.appendChild(list);
+                    
+                }
             }
         }
 
